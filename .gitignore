@@ -1,0 +1,31 @@
+# Installation logs
+*.log
+/tmp/
+
+# Build artifacts
+*.tar.*
+*.iso
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Root cache
+root_cache/
+.cache/
+
+# Downloaded files
+downloads/
+stage3-*.tar.*
+
+# Config backups
+*.orig
+*.backup
