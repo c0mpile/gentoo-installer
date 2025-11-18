@@ -34,7 +34,7 @@ setup_btrfs() {
     mkdir -p /mnt/gentoo/{root,home,opt,srv,var/log,var/tmp,var/cache,.snapshots}
     
     for subvol in @root @home @opt @srv; do
-        mountpoint="/mnt/gentoo${subvol#@}"
+        mountpoint="/mnt/gentoo/${subvol#@}"
         mount -o "subvol=$subvol,noatime,compress=zstd,ssd,discard=async,space_cache=v2" "$luks_mapper" "$mountpoint"
     done
     
