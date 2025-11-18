@@ -11,7 +11,7 @@ download_and_extract_stage3() {
     log "Downloading stage3 tarball..."
     
     # Get the latest filename
-    local stage3_file=$(curl -s "$mirror" | grep -oP 'stage3-amd64-systemd-\d+\.tar\.xz' | tail -1)
+    local stage3_file=$(curl -s "$mirror" | grep -oP 'stage3-amd64-systemd-\d{8}T\d{6}Z\.tar\.xz' | tail -1)
     
     if [[ -z "$stage3_file" ]]; then
         log_error "Could not determine stage3 filename"
