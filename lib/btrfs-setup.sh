@@ -48,7 +48,7 @@ setup_btrfs() {
     
     # Mount EFI
     mkdir -p /mnt/gentoo/boot
-    mount "${DISK}p1" /mnt/gentoo/boot
+    mount "${target_disk}p1" /mnt/gentoo/boot
     
     log_success "btrfs subvolumes mounted"
 }
