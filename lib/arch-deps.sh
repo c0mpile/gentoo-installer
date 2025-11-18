@@ -3,7 +3,7 @@
 
 install_arch_dependencies() {
     local packages=(
-        "arch-chroot"
+       # "arch-chroot"
         "arch-install-scripts"
         "cryptsetup"
         "btrfs-progs"
